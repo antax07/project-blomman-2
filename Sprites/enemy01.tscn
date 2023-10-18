@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://8gaainsqco5l"]
+[gd_scene load_steps=9 format=3 uid="uid://8gaainsqco5l"]
 
 [ext_resource type="Script" path="res://Scripts/enemy01.gd" id="1_0lllj"]
 [ext_resource type="Texture2D" uid="uid://brr3r2pwd4mn6" path="res://Assets/enemy01.png" id="1_np7y3"]
@@ -7,19 +7,89 @@
 
 [sub_resource type="Animation" id="Animation_tc0rn"]
 resource_name = "Walk_Down"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 4, 8, 12]
+}
+
+[sub_resource type="Animation" id="Animation_2ui02"]
+resource_name = "Walk_Up"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [1, 5, 9, 13]
+}
+
+[sub_resource type="Animation" id="Animation_dcltd"]
+resource_name = "Walk_Left"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [2, 6, 10, 14]
+}
+
+[sub_resource type="Animation" id="Animation_45184"]
+resource_name = "Walk_Right"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [3, 7, 11, 15]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_gqaes"]
 _data = {
-"Walk_Down": SubResource("Animation_tc0rn")
+"Walk_Down": SubResource("Animation_tc0rn"),
+"Walk_Left": SubResource("Animation_dcltd"),
+"Walk_Right": SubResource("Animation_45184"),
+"Walk_Up": SubResource("Animation_2ui02")
 }
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_0lllj")
 
 [node name="Sprite" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
 texture = ExtResource("1_np7y3")
 hframes = 4
 vframes = 4
+frame = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(0.795, 0.795)
