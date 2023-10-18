@@ -1,10 +1,31 @@
-[gd_scene load_steps=2 format=3 uid="uid://8gaainsqco5l"]
+[gd_scene load_steps=6 format=3 uid="uid://8gaainsqco5l"]
+
+[ext_resource type="Script" path="res://Scripts/enemy01.gd" id="1_0lllj"]
+[ext_resource type="Texture2D" uid="uid://brr3r2pwd4mn6" path="res://Assets/enemy01.png" id="1_np7y3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_p3mm4"]
 
+[sub_resource type="Animation" id="Animation_tc0rn"]
+resource_name = "Walk_Down"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gqaes"]
+_data = {
+"Walk_Down": SubResource("Animation_tc0rn")
+}
+
 [node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_0lllj")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_np7y3")
+hframes = 4
+vframes = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.795, 0.795)
 shape = SubResource("CircleShape2D_p3mm4")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_gqaes")
+}
