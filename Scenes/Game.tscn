@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjqqa3vrn4u8b"]
+
+[ext_resource type="Script" path="res://Scenes/BlommPlacering.gd" id="1_bi0o0"]
+
+[node name="Game" type="Node2D"]
+
+[node name="BlommPlacering" type="Node" parent="."]
+script = ExtResource("1_bi0o0")
