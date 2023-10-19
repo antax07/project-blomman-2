@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://6pt43onv8liw"]
 
-[ext_resource type="PackedScene" uid="uid://8gaainsqco5l" path="res://Sprites/enemy01.tscn" id="1_l8put"]
+[ext_resource type="PackedScene" uid="uid://blq8j5tivnju2" path="res://Test/enemy.tscn" id="1_e583p"]
 
 [sub_resource type="Curve2D" id="Curve2D_ib63t"]
 _data = {
@@ -16,5 +16,4 @@ position = Vector2(-22, 252)
 rotation = 0.0184481
 loop = false
 
-[node name="CharacterBody2D" parent="PathFollow2D" instance=ExtResource("1_l8put")]
-speed = 500
+[node name="enemy" parent="PathFollow2D" instance=ExtResource("1_e583p")]
