@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://de5eseet3qygh"]
 
-[ext_resource type="Texture2D" uid="uid://35u7blt2pmlw" path="res://assets/dart.png" id="1_ke7hr"]
+[ext_resource type="Texture2D" uid="uid://35u7blt2pmlw" path="res://Assets/dart.png" id="1_ke7hr"]
 
 [node name="dart" type="CharacterBody2D"]
 

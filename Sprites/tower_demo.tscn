@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://d0agxspt40viq"]
 
-[ext_resource type="PackedScene" uid="uid://ddpxobn85nfti" path="res://Test/tower.tscn" id="1_gsk8s"]
-[ext_resource type="PackedScene" uid="uid://blq8j5tivnju2" path="res://Test/enemy.tscn" id="2_m504a"]
+[ext_resource type="PackedScene" uid="uid://ddpxobn85nfti" path="res://Sprites/tower.tscn" id="1_gsk8s"]
+[ext_resource type="PackedScene" uid="uid://blq8j5tivnju2" path="res://Sprites/enemy.tscn" id="2_m504a"]
 
 [node name="TowerDemo" type="Node2D"]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwowl0rnpgdwi"
-path="res://.godot/imported/red.png-3d97a0d8f65ba8535200e825cf38109e.ctex"
+uid="uid://35u7blt2pmlw"
+path="res://.godot/imported/dart.png-254f0b649a217e2101cfa39d65f2f1d9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Test/red.png"
-dest_files=["res://.godot/imported/red.png-3d97a0d8f65ba8535200e825cf38109e.ctex"]
+source_file="res://Assets/dart.png"
+dest_files=["res://.godot/imported/dart.png-254f0b649a217e2101cfa39d65f2f1d9.ctex"]
 
 [params]
 
