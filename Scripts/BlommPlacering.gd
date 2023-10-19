@@ -1,6 +1,6 @@
 extends Node
 
-var blommaScene = preload("res://Test/tower.tscn")
+var blommaScene = preload("res://Sprites/tower.tscn")
 
 func _process(delta):
 	if Input.is_action_just_pressed("rightClick"):

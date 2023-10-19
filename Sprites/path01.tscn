@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://6pt43onv8liw"]
 
-[ext_resource type="PackedScene" uid="uid://blq8j5tivnju2" path="res://Test/enemy.tscn" id="1_e583p"]
+[ext_resource type="PackedScene" uid="uid://blq8j5tivnju2" path="res://Sprites/enemy.tscn" id="1_e583p"]
 
 [sub_resource type="Curve2D" id="Curve2D_ib63t"]
 _data = {
