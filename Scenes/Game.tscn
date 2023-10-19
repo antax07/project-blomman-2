@@ -1,8 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://b4vgcagov6rw5"]
+[gd_scene load_steps=3 format=3 uid="uid://b4vgcagov6rw5"]
 
 [ext_resource type="Script" path="res://Scripts/BlommPlacering.gd" id="1_jq2o1"]
+[ext_resource type="PackedScene" uid="uid://yd8v01uxmmbw" path="res://Sprites/Player.tscn" id="2_sy58b"]
 
 [node name="Game" type="Node2D"]
 
 [node name="BlommPlacering" type="Node" parent="."]
 script = ExtResource("1_jq2o1")
+
+[node name="Player" parent="." instance=ExtResource("2_sy58b")]
