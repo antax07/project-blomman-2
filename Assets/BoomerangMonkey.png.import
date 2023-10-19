@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drx8apl1id2ba"
-path="res://.godot/imported/Peashooter.png-e8c62670bdcd21f3ff613c12a8c341e4.ctex"
+uid="uid://bbphqad3iqeir"
+path="res://.godot/imported/BoomerangMonkey.png-cf23ddc632c6a5c655dbf67df69b62ad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Peashooter.png"
-dest_files=["res://.godot/imported/Peashooter.png-e8c62670bdcd21f3ff613c12a8c341e4.ctex"]
+source_file="res://Assets/BoomerangMonkey.png"
+dest_files=["res://.godot/imported/BoomerangMonkey.png-cf23ddc632c6a5c655dbf67df69b62ad.ctex"]
 
 [params]
 

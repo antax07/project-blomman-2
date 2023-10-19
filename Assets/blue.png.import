@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxlu6hf7if784"
-path="res://.godot/imported/Pea.png-d85594180f93b03a2649d0038911ec5a.ctex"
+uid="uid://dtm3xvucdyyk7"
+path="res://.godot/imported/blue.png-0fb6959e49f7975842f8556fafcc4001.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Pea.png"
-dest_files=["res://.godot/imported/Pea.png-d85594180f93b03a2649d0038911ec5a.ctex"]
+source_file="res://Assets/blue.png"
+dest_files=["res://.godot/imported/blue.png-0fb6959e49f7975842f8556fafcc4001.ctex"]
 
 [params]
 
