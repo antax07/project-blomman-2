@@ -12,7 +12,6 @@ func _process(_delta):
 	
 func get_target():
 	var enemy_group = get_tree().get_nodes_in_group("enemy")
-
 	var closest_enemy = null
 	var highest_track = -1
 

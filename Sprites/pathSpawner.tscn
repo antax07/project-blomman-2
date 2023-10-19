@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://bwe003jdcbjv1"]
+[gd_scene load_steps=2 format=3 uid="uid://cis6r2cl10d0h"]
 
 [ext_resource type="Script" path="res://Scripts/PathSpawner.gd" id="1_hm6nu"]
 
