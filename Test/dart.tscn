@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://de5eseet3qygh"]
+
+[ext_resource type="Texture2D" uid="uid://35u7blt2pmlw" path="res://assets/dart.png" id="1_ke7hr"]
+
+[node name="dart" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.175115, 0.175115)
+texture = ExtResource("1_ke7hr")

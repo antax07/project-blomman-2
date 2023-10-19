@@ -7,6 +7,8 @@ var speed = 500
 func _physics_process(delta):
 	if target.global_position == null:
 		queue_free()
+	if not is_instance_valid(target):
+		queue_free()
 	
 	print(target.global_position)
 	print(target)
