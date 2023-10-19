@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://btxpif6ohqrtl"]
+[gd_scene load_steps=5 format=3 uid="uid://btxpif6ohqrtl"]
 
 [ext_resource type="Texture2D" uid="uid://bchioo0dnxgap" path="res://Assets/map01.png" id="1_vqid4"]
 [ext_resource type="Script" path="res://Scripts/PathSpawner.gd" id="2_7wp52"]
+[ext_resource type="PackedScene" uid="uid://chsug02i37215" path="res://Sprites/Ui.tscn" id="4_n7j81"]
 [ext_resource type="PackedScene" uid="uid://yd8v01uxmmbw" path="res://Sprites/Player.tscn" id="4_ypdhl"]
 
 [node name="Main" type="Node2D"]
@@ -18,5 +19,8 @@ script = ExtResource("2_7wp52")
 autostart = true
 
 [node name="Player" parent="." instance=ExtResource("4_ypdhl")]
+position = Vector2(12, -16)
+
+[node name="Ui" parent="." instance=ExtResource("4_n7j81")]
 
 [connection signal="timeout" from="PathSpawner/Timer" to="PathSpawner" method="_on_timer_timeout"]
