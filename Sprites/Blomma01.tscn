@@ -1,19 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://opw4ccu0m6en"]
+[gd_scene load_steps=3 format=3 uid="uid://gl7ox7ueq1y1"]
 
-[ext_resource type="PackedScene" uid="uid://ejgjfg0rocl3" path="res://Sprites/damage_test.tscn" id="1_0hon7"]
+[ext_resource type="Script" path="res://Scripts/damage_test.gd" id="1_vrl0n"]
+[ext_resource type="Texture2D" uid="uid://drx8apl1id2ba" path="res://Assets/Peashooter.png" id="2_4pu0l"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_emg4l"]
-size = Vector2(50, 75)
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_vrl0n")
 
-[node name="Node2D" type="Node2D"]
+[node name="Timer" type="Timer" parent="."]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_0hon7")]
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-3.00006, -6.00006)
+scale = Vector2(0.0588003, 0.0643564)
+texture = ExtResource("2_4pu0l")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(3, 3.5)
-shape = SubResource("RectangleShape2D_emg4l")
-
-[node name="RPM_timer" type="Timer" parent="."]
+[node name="rpm_timer" type="Timer" parent="."]
 autostart = true
 
-[connection signal="timeout" from="RPM_timer" to="CharacterBody2D" method="_on_rpm_timer_timeout"]
+[connection signal="timeout" from="rpm_timer" to="." method="_on_rpm_timer_timeout"]

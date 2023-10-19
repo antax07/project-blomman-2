@@ -27,3 +27,4 @@ func _process(_delta):
 func _on_rpm_timer_timeout():
 	timerReady = true
 	bullet += 1
+	

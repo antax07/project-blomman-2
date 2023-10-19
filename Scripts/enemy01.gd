@@ -33,3 +33,9 @@ func get_animation_direction(rotation):
 		return "down"
 	else:
 		return "left"
+
+
+
+func _on_area_2d_area_entered(area):
+	if area.is_in_group("projectile"):
+		queue_free()
