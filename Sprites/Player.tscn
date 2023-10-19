@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://yd8v01uxmmbw"]
+[gd_scene load_steps=5 format=3 uid="uid://yd8v01uxmmbw"]
 
+[ext_resource type="Script" path="res://Scripts/BlommPlacering.gd" id="1_pu0so"]
 [ext_resource type="Script" path="res://Scripts/playerMovement.gd" id="1_um8m0"]
 [ext_resource type="Texture2D" uid="uid://brr3r2pwd4mn6" path="res://Assets/enemy01.png" id="2_cphy3"]
 
@@ -7,6 +8,7 @@
 size = Vector2(51, 72)
 
 [node name="Player" type="Node2D"]
+script = ExtResource("1_pu0so")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 script = ExtResource("1_um8m0")
