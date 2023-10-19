@@ -1,17 +1,22 @@
 extends CharacterBody2D
 
 @export var speed = 1000
-
+var hp = 100
 @onready var animation = $AnimationPlayer
+
+func rad2deg(radians):
+	return radians * 180 / PI
 
 func _process(delta):
 	get_parent().set_progress(get_parent().get_progress() + speed * delta)
 	if get_parent().get_progress_ratio() == 1:
 		queue_free()
 		
-	#if get_animation_direction(rotation) == "up":
-	print(rotation)
-	print(rotation_degrees)
+	if hp <= 0:
+		queue_free()
+		
+	#var rotation_degrees = rad2deg(get_rotation())
+	#print("Rotation in degrees: ", rotation_degrees)
 		
 func get_animation_direction(rotation):
 	var normalized_rotation = (rotation + 360) % 360
