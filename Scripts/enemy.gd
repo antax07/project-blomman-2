@@ -4,6 +4,7 @@ var rng = RandomNumberGenerator.new()
 var track = 0
 var hp = 30
 var speed = 100
+@export var addedMoney = 10
 
 func _ready():
 	var track
@@ -11,6 +12,7 @@ func _ready():
 
 func _process(delta):
 	if hp < 0:
+		Global.money += addedMoney
 		queue_free()
 	
 	track = get_parent().get_progress_ratio()
