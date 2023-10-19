@@ -4,7 +4,7 @@ extends CharacterBody2D
 var mouse_pos = null
 var direction = null
 var stop_distance = 10
-var isPlacing = false
+var isPlacing = Global.isPlacing
 
 func _physics_process(_delta):
 	var vel = Vector2(0, 0)
@@ -32,3 +32,4 @@ func _physics_process(_delta):
 		if position.distance_to(mouse_pos) < stop_distance:
 			velocity = Vector2(0, 0)
 			isPlacing = false
+	Global.isPlacing = isPlacing
