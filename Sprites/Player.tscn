@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" path="res://Scripts/BlommPlacering.gd" id="1_pu0so"]
 [ext_resource type="Script" path="res://Scripts/playerMovement.gd" id="1_um8m0"]
-[ext_resource type="Texture2D" uid="uid://brr3r2pwd4mn6" path="res://Assets/enemy01.png" id="2_cphy3"]
+[ext_resource type="Texture2D" uid="uid://ilnldlymobu4" path="res://Assets/Player.png" id="3_f0ei2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j30dd"]
-size = Vector2(51, 72)
+size = Vector2(75, 115)
 
 [node name="Player" type="Node2D"]
 script = ExtResource("1_pu0so")
@@ -14,8 +14,10 @@ script = ExtResource("1_pu0so")
 script = ExtResource("1_um8m0")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-texture = ExtResource("2_cphy3")
+position = Vector2(27, 35)
+scale = Vector2(2.08, 1.875)
+texture = ExtResource("3_f0ei2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(3.5, 2)
+position = Vector2(30.5, 22.5)
 shape = SubResource("RectangleShape2D_j30dd")
